@@ -3,8 +3,8 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-import { EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { Autoplay,EffectCoverflow, Pagination, Navigation } from "swiper/modules";
 
  
 
@@ -16,9 +16,14 @@ const SwiperF = () => {
         grabCursor={true}
         centeredSlides={true}
         loop={true}
+        speed={2000}
+        autoplay={{
+          delay: 1,
+          disableOnInteraction: false
+        }}
         slidesPerView={"auto"}
         coverflowEffect={{
-          rotate: 0,
+          rotate: 1,
           stretch: 0,
           depth: 100,
           modifier: 2.5,
@@ -29,7 +34,7 @@ const SwiperF = () => {
           prevEl: ".swiper-button-prev",
           clickable: true,
         }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[Autoplay, EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
         <SwiperSlide>
@@ -59,10 +64,10 @@ const SwiperF = () => {
 
         <div className="slider-controler">
           <div className="swiper-button-prev slider-arrow">
-            <i name="arrow-back-outline"></i>
+            <AiOutlineLeft/>
           </div>
           <div className="swiper-button-next slider-arrow">
-            <i name="arrow-forward-outline"></i>
+            <AiOutlineRight/>
           </div>
           <div className="swiper-pagination"></div>
         </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
+  Collapse,
   Typography,
   Button,
   IconButton,
@@ -84,8 +84,8 @@ export function NavbarDefault() {
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-full py-2 px-4 lg:px-8 lg:py-4">
-      <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
+    <Navbar className="mx-auto max-w-screen-full py-2 px-4 lg:px-12 lg:py-4">
+      <div className="mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
@@ -140,7 +140,7 @@ export function NavbarDefault() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className="container mx-auto">
           {navList}
           <Button variant="gradient" color='blue' size="sm" fullWidth className="mb-2">
@@ -150,7 +150,7 @@ export function NavbarDefault() {
             </span>
           </Button>
         </div>
-      </MobileNav>
+      </Collapse>
     </Navbar>
   );
 }
