@@ -9,7 +9,9 @@ export default withMT({
       skybright: "#bae6fd",
       skydark: "#082f49",
       primary: "#3399EE",
-      dark: "#000"
+      dark: "#000",
+      lightening: "#fcd34d",
+      lightening_light: "rgb(254 243 199)",
     },
     extend: {},
   },
