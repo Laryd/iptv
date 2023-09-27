@@ -47,8 +47,8 @@ export function Qanda() {
           <AccordionBody>
             Don't worry about anything, our service is compatible with every
             device and every application and our team will fully support you
-            step by step until the the iptv service is activated ! Just
-            subscribe now and we'll do the rest!
+            step by step until the the iptv service is activated! Just
+            <span className="text-bold italic"> Subscibe Now</span> and we'll do the rest!
           </AccordionBody>
         </Accordion>
         <Accordion
