@@ -89,7 +89,7 @@ export function Qanda() {
           icon={<Icon id={4} open={open} />}
         >
           <AccordionHeader onClick={() => handleOpen(4)}>
-            How long does it take to receive my IPTV subscription
+            How long does it take to receive my IPTV subscription?
           </AccordionHeader>
           <AccordionBody>
             Our team is working hard to make every single client satisfied ! you
