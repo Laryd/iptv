@@ -41,15 +41,15 @@ const Watching = () => {
         </div>
       </div>
       <div className="flex justify-center items-center gap-5 py-14">
-        <div className="bg-primary hover:cursor-pointer w-48 h-28 rounded-3xl p-2  border-black border-2  text-white text-center pt-7 flex flex-col items-center">
+        <div className="bg-primary  hover:opacity-75 cursor-pointer w-48 h-28 rounded-3xl p-2  border-black border-2  text-white text-center pt-7 flex flex-col items-center">
           <FaWhatsapp className="text-4xl relative ml-7 text-lightening" />
           <h2 className='pl-6'>Whatsapp</h2>
         </div>
-        <div className="bg-primary hover:cursor-pointer w-48 h-28 rounded-3xl p-2  border-black border-2  text-white text-center pt-7 flex flex-col items-center">
+        <div className="bg-primary  hover:opacity-75 cursor-pointer w-48 h-28 rounded-3xl p-2  border-black border-2  text-white text-center pt-7 flex flex-col items-center">
           <FaTelegramPlane className="text-4xl relative ml-7 text-lightening" />
           <h2 className='pl-6'>Telegram</h2>
         </div>
-        <div className="bg-primary hover:cursor-pointer w-48 h-28 rounded-3xl p-2  border-black border-2  text-white text-center pt-7 flex flex-col items-center">
+        <div className="bg-primary  hover:opacity-75 cursor-pointer w-48 h-28 rounded-3xl p-2  border-black border-2  text-white text-center pt-7 flex flex-col items-center">
           <MdOutlineEmail className="text-4xl relative ml-7 text-lightening" />
           <h2 className='pl-6'>Email Support</h2>
         </div>

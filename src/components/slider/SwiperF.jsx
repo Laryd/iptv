@@ -4,10 +4,13 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-import { Autoplay,EffectCoverflow, Pagination, Navigation } from "swiper/modules";
+import {
+  Autoplay,
+  EffectCoverflow,
+  Pagination,
+  Navigation,
+} from "swiper/modules";
 import Details from "./Details";
-
- 
 
 const SwiperF = () => {
   return (
@@ -39,37 +42,37 @@ const SwiperF = () => {
         className="swiper_container"
       >
         <SwiperSlide>
-          <img src="src\assets\images\img_1.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_1.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_2.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_2.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_3.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_3.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_4.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_4.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_5.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_5.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_6.png" alt="slide_image" />
+          <img src="../../assets/images/img_6.png" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_7.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_7.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_8.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_8.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_9.png" alt="slide_image" />
+          <img src="../../assets/images/img_9.png" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_10.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_10.jpg" alt="slide_image" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src="src/assets/images/img_11.jpg" alt="slide_image" />
+          <img src="../../assets/images/img_11.jpg" alt="slide_image" />
         </SwiperSlide>
 
         <div className="slider-controler">
@@ -82,7 +85,7 @@ const SwiperF = () => {
           <div className="swiper-pagination"></div>
         </div>
       </Swiper>
-      <Details/>
+      <Details />
     </div>
   );
 };

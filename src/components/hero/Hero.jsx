@@ -31,21 +31,21 @@ const Hero = () => {
       </div>
       <div className="flex justify-center items-center gap-28">
         <div className="flex gap-8">
-          <div className="bg-primary hover:cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
+          <div className="bg-primary hover:opacity-75 cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
             <GoVideo className="text-2xl relative ml-7 text-lightening" /> Over 80K
             Live, Movies & Series.
           </div>
-          <div className="bg-primary hover:cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
+          <div className="bg-primary hover:opacity-75 cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
             <FiSettings className="text-2xl relative ml-7 text-lightening" /> Easy &
             Fast Setup
           </div>
         </div>
         <div className="flex gap-8">
-          <div className="bg-primary hover:cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
+          <div className="bg-primary hover:opacity-75 cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
             <PiTelevisionSimpleLight className="text-2xl relative ml-7 text-lightening" />
             4k high quality stream
           </div>
-          <div className="bg-primary hover:cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
+          <div className="bg-primary hover:opacity-75 cursor-pointer w-28 h-28 rounded-md p-2  border-black border-2  text-white text-center">
             <PiLightning className="text-2xl relative ml-7 text-lightening" />{" "}
             Anti-buffer 5.0
           </div>
