@@ -7,6 +7,7 @@ import {
 } from "react-icons/pi";
 import { MdOutlineSupportAgent } from "react-icons/md";
 import { BsEnvelopeCheck } from "react-icons/bs";
+import channelpile from '../../assets/images/channelpiles.webp'
 const Details = () => {
   return (
     <>
@@ -36,7 +37,7 @@ const Details = () => {
           </div>
         </div>
         <div>
-          <img src="src/assets/images/channelpiles.webp" alt="channel piles" />
+          <img src={channelpile} alt="channel piles" />
         </div>
       </div>
       <div className="grid grid-rows-2 grid-cols-2 gap-2 px-80">
