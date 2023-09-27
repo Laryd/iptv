@@ -11,7 +11,7 @@ const Hero = () => {
       <div>
         <h1 className="text-4xl">
           <span className="relative left-72">Fast & Reliable </span> <br />
-          <span className="relative right-28 text-6xl font-bold">
+          <span className="relative right-28 italic font-mono text-6xl font-bold">
             Discover The Best Provider
           </span>
         </h1>
