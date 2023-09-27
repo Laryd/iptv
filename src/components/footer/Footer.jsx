@@ -12,11 +12,11 @@ const LINKS = [
   },
   {
     title: "Quick Links",
-    items: ["Terms"],
+    items: ["Term & Conditions"],
   },
   {
-    title: "Resource",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    title: "Newsletter",
+    items: ["Subscribe",],
   },
 ];
 
