@@ -2,6 +2,7 @@ import {BsFillCalendar3RangeFill} from 'react-icons/bs'
 import { FaMoneyCheckAlt, FaWhatsapp, FaTelegramPlane } from "react-icons/fa";
 import { MdSupportAgent, MdOutlineEmail } from "react-icons/md";
 import { ImCheckboxChecked} from 'react-icons/im'
+import tvwatching from '../../assets/images/tvwatching.webp'
 
 const Watching = () => {
   return (
@@ -9,7 +10,7 @@ const Watching = () => {
       <div className="flex px-80 justify-between items-center">
         <div>
           <img
-            src="src/assets/images/tvwatching.webp"
+            src={tvwatching}
             alt="people watching tv"
           />
         </div>
