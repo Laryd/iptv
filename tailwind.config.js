@@ -13,7 +13,11 @@ export default withMT({
       lightening: "#fcd34d",
       lightening_light: "rgb(254 243 199)",
     },
-    extend: {},
+    extend: {
+      listStyleImage: {
+        store: 'url("/bullet1.svg")'
+      }
+    },
   },
   plugins: [],
 });

@@ -1,21 +1,18 @@
 
 import './App.css'
-import Faq from './components/faq/Faq';
-import { Footer} from './components/footer/Footer';
-import Hero from './components/hero/Hero';
-import { NavbarDefault } from './components/navbar/NavBar';
-import SwiperF from './components/slider/SwiperF';
+import {Route, Routes} from 'react-router-dom'
+import Home from './pages/Home';
+import Pricing from './pages/Pricing';
 
 function App() {
   
 
   return (
     <>
-      <NavbarDefault/>
-      <Hero/>
-      <SwiperF/>
-      <Faq/>
-      <Footer/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/pricing' element={<Pricing/>}/>
+      </Routes>
     </>
   );
 }

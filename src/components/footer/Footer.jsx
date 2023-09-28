@@ -1,4 +1,6 @@
-import { Typography } from "@material-tailwind/react";
+import { Button, Typography } from "@material-tailwind/react";
+import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 const LINKS = [
   {
@@ -7,7 +9,7 @@ const LINKS = [
       "466 Brooklyn FL 153, New York, NY 1013, USA",
       "Whatsapp: +1112-943-2780",
       "Customer Care: support@dopeiptv.com",
-      "Sales: Sales:sales@statesiptv.com",
+      "Sales: Sales:sales@dopeiptv.com",
     ],
   },
   {
@@ -16,7 +18,7 @@ const LINKS = [
   },
   {
     title: "Newsletter",
-    items: ["Subscribe",],
+    items: ["Subscribe"],
   },
 ];
 
@@ -24,46 +26,113 @@ const currentYear = new Date().getFullYear();
 
 export function Footer() {
   return (
-    <footer className="relative w-full bg-primary pt-4">
+    <footer id="footer" className="relative w-full bg-primary pt-4">
       <div className="mx-auto w-full max-w-7xl px-8">
-        <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
-          <Typography variant="h5" className="mb-6">
-            Dope IPTV
-          </Typography>
-          <div className="grid grid-cols-3 justify-between gap-28">
-            {LINKS.map(({ title, items }) => (
-              <ul key={title}>
-                <Typography
-                  variant="small"
-                  color="black"
-                  className="mb-3 font-medium"
-                >
-                  {title}
-                </Typography>
-                {items.map((link) => (
-                  <li key={link}>
-                    <Typography
-                      as="a"
-                      href="#"
-                      color="white"
-                      className="py-1.5 font-normal transition-colors hover:text-blue-gray-900"
+        <div className="py-3 pb-11">
+          <h1 className="text-xl font-extrabold">Dope IPTV</h1>
+          <p className="py-1 italic text-brown-100">
+            4k streaming in your hands
+          </p>
+        </div>
+        <div className="flex gap-20">
+          <div>
+            <h1 className="font-bold">Contact</h1>
+            <div className="mt-5">
+              <div className="flex gap-10 text-white">
+                <div className="mb-16">
+                  <address>
+                    449 Brooklyn FL 174 <br />
+                    New York, NY 10013, USA
+                  </address>
+                </div>
+                <div>
+                  <h2>Whatsapp: </h2>
+                  <p>+1123-476-6734</p>
+                </div>
+              </div>
+              <div className="flex gap-20 text-white">
+                <div>
+                  <h2>Sales:</h2>
+                  <p>sales@dopeiptv.com</p>
+                </div>
+                <div>
+                  <h2>Customer Care:</h2>
+                  <p>support@dopeiptv.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h1 className="mb-5 font-bold">Quick Links</h1>
+            <a href="#" className="text-white">
+              Terms & Conditions
+            </a>
+          </div>
+          <div>
+            <h1 className="mb-5 font-bold">Follow</h1>
+
+            <h2 className="mb-3 text-white">Sign up for our newsletter</h2>
+            <p className="mb-3 text-white">
+              Stay up to date with the roadmap progress, announcements and
+              exclusive discounts feel free to sign up with your email.
+            </p>
+            <form action="#">
+              <div class="items-center mb-3 max-w-screen-sm sm:flex sm:space-y-0">
+                <div class="relative w-full">
+                  <label
+                    for="email"
+                    class="hidden mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                  >
+                    Email address
+                  </label>
+                  <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                    <svg
+                      class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
-                      {link}
-                    </Typography>
-                  </li>
-                ))}
-              </ul>
-            ))}
+                      <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                      <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+                    </svg>
+                  </div>
+                  <input
+                    class="block p-3 pl-10 w-72 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+                    placeholder="Enter your email"
+                    type="email"
+                    id="email"
+                    required=""
+                  />
+                </div>
+                <div>
+                  <button
+                    type="submit"
+                    class="py-3 px-5 bg-black mr-40 text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-primary-700 border-primary-600 sm:rounded-none sm:rounded-r-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+              <div class="max-w-screen-sm text-sm text-brown-100 newsletter-form-footer dark:text-gray-300">
+                We care about the protection of your data.{" "}
+                <a
+                  href="#"
+                  class="font-medium text-primary-600 dark:text-primary-500 hover:underline"
+                >
+                  Read our Privacy Policy
+                </a>
+                .
+              </div>
+            </form>
           </div>
         </div>
+
         <div className="mt-12 flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
           <Typography
             variant="small"
             className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
           >
-            &copy; {currentYear}{" "}
-            <a href="#">Dope IPTV</a>. All
-            Rights Reserved.
+            &copy; {currentYear} <a href="#">Dope IPTV</a>. All Rights Reserved.
           </Typography>
           <div className="flex gap-4 text-blue-gray-900 sm:justify-center">
             <Typography
@@ -71,53 +140,22 @@ export function Footer() {
               href="#"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
-              <svg
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              <MdOutlineEmail className="h-5 w-5" />
             </Typography>
             <Typography
               as="a"
               href="#"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
-              <svg
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
-                  clip-rule="evenodd"
-                />
-              </svg>
+              <FaWhatsapp className="h-5 w-5" />
             </Typography>
             <Typography
               as="a"
               href="#"
               className="opacity-80 transition-opacity hover:opacity-100"
             >
-              <svg
-                className="h-5 w-5"
-                fill="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-              </svg>
+              <FaTelegramPlane className="h-5 w-5" />
             </Typography>
-          
-            
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ import {
   Button,
   IconButton,
 } from "@material-tailwind/react";
-import {MdOutlineKeyboardDoubleArrowRight} from 'react-icons/md'
+import { Link } from "react-router-dom";
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -26,9 +26,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/" className="flex items-center">
           Home
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -46,9 +46,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/pricing" className="flex items-center">
           Pricing
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -76,7 +76,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#footer" className="flex items-center">
           Contact
         </a>
       </Typography>
