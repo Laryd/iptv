@@ -6,7 +6,7 @@ const Price = () => {
   return (
     <div className="flex justify-center gap-4 pt-16 text-center mb-28">
       <div className="bg-white border-x-4 border-y-2 border-blue-400 shadow-xl p-3 rounded-3xl ">
-        <h1 className="pb-10 text-3xl mt-16">1 Month</h1>
+        <h1 className="pb-10 text-3xl mt-16  text-blue-gray-900 font-bold">1 Month</h1>
         <h2 className="pb-10 text-3xl font-bold relative">
           $15
           <sup className="sups font-thin text-xs text-gray-700 absolute">
@@ -25,7 +25,7 @@ const Price = () => {
         </div>
       </div>
       <div className="bg-white border-x-4 border-y-2 border-indigo-400 p-3 rounded-3xl ">
-        <h1 className="pb-10 text-3xl mt-16">3 Months</h1>
+        <h1 className="pb-10 text-3xl mt-16 text-blue-gray-900 font-bold">3 Months</h1>
         <h2 className="pb-10 text-3xl font-bold relative">
           $34
           <sup className="sups font-thin text-xs text-gray-700 absolute">
@@ -44,7 +44,7 @@ const Price = () => {
         </div>
       </div>
       <div className="bg-white border-x-4 border-y-2 border-green-400 p-3 rounded-3xl ">
-        <h1 className="pb-10 text-3xl mt-16">6 Months</h1>
+        <h1 className="pb-10 text-3xl mt-16  text-blue-gray-900 font-bold">6 Months</h1>
         <h2 className="pb-10 text-3xl font-bold relative">
           $44
           <sup className="sups font-thin text-xs text-gray-700 absolute">
@@ -66,7 +66,7 @@ const Price = () => {
         <p className="bg-red-400 rounded-3xl px-2 text-white absolute top-[-12px] left-[50px]">
           BEST OFFER
         </p>
-        <h1 className="pb-10 text-3xl mt-16">12 Months</h1>
+        <h1 className="pb-10 text-3xl mt-16  text-blue-gray-900 font-bold">12 Months</h1>
         <h2 className="pb-10 text-3xl font-bold relative">
           $74
           <sup className="sups font-thin text-xs text-gray-700 absolute">
