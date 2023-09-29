@@ -37,7 +37,7 @@ const Details = () => {
           </div>
         </div>
         <div>
-          <img src={channelpile} alt="channel piles" />
+          <img src={channelpile} alt="channel piles" className="min-w-fit" />
         </div>
       </div>
       <div className="grid grid-rows-2 grid-cols-2 gap-2 px-80">

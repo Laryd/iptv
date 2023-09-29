@@ -12,6 +12,7 @@ const Watching = () => {
           <img
             src={tvwatching}
             alt="people watching tv"
+            className='min-w-fit'
           />
         </div>
         <div className="w-96 pt-12">

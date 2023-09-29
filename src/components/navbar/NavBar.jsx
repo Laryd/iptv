@@ -36,9 +36,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to="/trial" className="flex items-center">
           Trial
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
