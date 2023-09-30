@@ -9,7 +9,7 @@ import Ratings from "./Ratings";
 
 const Form = () => {
   return (
-    <div className="flex gap-5 justify-center">
+    <div className="flex gap-32 justify-center">
       <form className="mt-12 flex flex-col items-center mb-6">
         <div className="w-96 p-7 rounded-[2rem] border border-black border-x-2 border-y-2">
           <h1 className="text-3xl">Start IPTV trial pass!</h1>
@@ -25,7 +25,7 @@ const Form = () => {
               type="email"
               id="email"
               placeholder="e.g., email@example.com"
-              className="w-60 h-10 border border-blue-200 rounded-lg"
+              className="w-60 h-10 border border-blue-200 rounded-lg p-2"
             />
           </div>
           <div className="flex flex-col mb-5">
@@ -34,7 +34,7 @@ const Form = () => {
               type="text"
               id="number"
               placeholder="+1XXX-XXX-XXXX"
-              className="w-60 h-10 border border-blue-200 rounded-lg"
+              className="w-60 h-10 border border-blue-200 rounded-lg p-2"
             />
           </div>
           <div className="flex flex-col mb-5">
@@ -71,7 +71,7 @@ const Form = () => {
               type="text"
               id="mac"
               placeholder="eg 00:1A:67......."
-              className="w-60 h-10 border border-blue-200 rounded-lg"
+              className="w-60 h-10 border border-blue-200 rounded-lg p-2"
             />
           </div>
           <div className="flex gap-2">
@@ -86,9 +86,9 @@ const Form = () => {
               variant="gradient"
               size="lg"
               color="blue"
-              className="hidden lg:inline-block my-16"
+              className="hidden lg:inline-block my-16 px-20"
             >
-              Subscribe
+              Send
             </Button>
           </div>
         </div>
