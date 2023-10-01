@@ -9,7 +9,7 @@ import Ratings from "./Ratings";
 
 const Form = () => {
   return (
-    <div className="flex gap-32 justify-center">
+    <div className="flex gap-20 justify-center">
       <form className="mt-12 flex flex-col items-center mb-6">
         <div className="w-96 p-7 rounded-[2rem] border border-black border-x-2 border-y-2">
           <h1 className="text-3xl">Start IPTV trial pass!</h1>

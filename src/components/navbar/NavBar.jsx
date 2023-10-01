@@ -56,9 +56,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <Link to='/reseller' className="flex items-center">
           Reseller
-        </a>
+        </Link>
       </Typography>
       <Typography
         as="li"
@@ -94,7 +94,7 @@ export function NavbarDefault() {
           DopeIPTV
         </Typography>
         <div className="hidden lg:block">{navList}</div>
-        <Link to='/pricing'>
+        <Link to="/pricing">
           <Button
             variant="gradient"
             size="lg"
@@ -145,15 +145,17 @@ export function NavbarDefault() {
       <Collapse open={openNav}>
         <div className="container mx-auto">
           {navList}
-          <Button
-            variant="gradient"
-            color="blue"
-            size="sm"
-            fullWidth
-            className="mb-2"
-          >
-            <span>Subscribe </span>
-          </Button>
+          <Link to="/pricing">
+            <Button
+              variant="gradient"
+              color="blue"
+              size="sm"
+              fullWidth
+              className="mb-2"
+            >
+              <span>Subscribe </span>
+            </Button>
+          </Link>
         </div>
       </Collapse>
     </Navbar>
