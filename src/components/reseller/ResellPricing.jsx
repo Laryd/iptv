@@ -58,7 +58,7 @@ const ResellPricing = () => {
         </ul>
       </div>
       <div className="flex gap-5 pt-16 pb-9">
-        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-100 px-7 rounded-3xl relative">
+        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-50 px-7 rounded-3xl relative">
           <h1 className="bg-red-400 rounded-3xl px-2 text-white absolute top-[-12px]">
             Most Popular
           </h1>
@@ -69,7 +69,7 @@ const ResellPricing = () => {
           </div>
           <p className="text-purple-300">Subreseller create</p>
         </div>
-        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-100 px-7 rounded-3xl relative">
+        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-50 px-7 rounded-3xl relative">
           <h1 className="bg-green-400 rounded-3xl px-2 text-white absolute top-[-12px]">
             5% discount
           </h1>
@@ -80,7 +80,7 @@ const ResellPricing = () => {
           </div>
           <p className="text-purple-300">Subreseller create</p>
         </div>
-        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-100 px-7 rounded-3xl relative">
+        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-50 px-7 rounded-3xl relative">
           <h1 className="bg-blue-400 rounded-3xl px-2 text-white absolute top-[-12px]">
             15% discount
           </h1>

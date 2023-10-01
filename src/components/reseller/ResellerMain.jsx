@@ -1,18 +1,20 @@
-import React from 'react'
-import Heading from './heading'
-import Dashboard from './dashboard'
-import ResellPricing from './ResellPricing'
-import Reasons from './Reasons'
+import React from "react";
+import Heading from "./heading";
+import Dashboard from "./dashboard";
+import ResellPricing from "./ResellPricing";
+import Reasons from "./Reasons";
 
 const ResellerMain = () => {
   return (
     <>
-      <Heading/>
-      <Dashboard/>
-      <ResellPricing/>
-      <Reasons/>
+      <div className="bg-amber-50">
+        <Heading />
+        <Dashboard />
+        <ResellPricing />
+        <Reasons />
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default ResellerMain
+export default ResellerMain;

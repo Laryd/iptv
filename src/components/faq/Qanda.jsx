@@ -36,7 +36,7 @@ export function Qanda() {
         <Accordion
           open={open === 1}
           icon={<Icon id={1} open={open} />}
-          className=" bg-lightening_light px-3 pt-5"
+          className=" bg-amber-50 px-3 pt-5"
         >
           <h1 className="flex justify-center text-2xl font-bold">
             Frequently Asked Questions
@@ -52,7 +52,7 @@ export function Qanda() {
           </AccordionBody>
         </Accordion>
         <Accordion
-          className=" bg-lightening_light px-3"
+          className=" bg-amber-50 px-3"
           open={open === 2}
           icon={<Icon id={2} open={open} />}
         >
@@ -69,7 +69,7 @@ export function Qanda() {
           </AccordionBody>
         </Accordion>
         <Accordion
-          className=" bg-lightening_light px-3"
+          className=" bg-amber-50 px-3"
           open={open === 3}
           icon={<Icon id={3} open={open} />}
         >
@@ -84,7 +84,7 @@ export function Qanda() {
           </AccordionBody>
         </Accordion>
         <Accordion
-          className=" bg-lightening_light px-3"
+          className=" bg-amber-50 px-3"
           open={open === 4}
           icon={<Icon id={4} open={open} />}
         >
@@ -99,7 +99,7 @@ export function Qanda() {
           </AccordionBody>
         </Accordion>
         <Accordion
-          className=" bg-lightening_light px-3"
+          className=" bg-amber-50 px-3"
           open={open === 5}
           icon={<Icon id={5} open={open} />}
         >
@@ -113,7 +113,7 @@ export function Qanda() {
           </AccordionBody>
         </Accordion>
         <Accordion
-          className=" bg-lightening_light px-3"
+          className=" bg-amber-50 px-3"
           open={open === 6}
           icon={<Icon id={6} open={open} />}
         >
@@ -127,7 +127,7 @@ export function Qanda() {
           </AccordionBody>
         </Accordion>
         <Accordion
-          className=" bg-lightening_light px-3"
+          className=" bg-amber-50 px-3"
           open={open === 7}
           icon={<Icon id={7} open={open} />}
         >

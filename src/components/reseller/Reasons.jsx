@@ -71,9 +71,9 @@ const Reasons = () => {
           over it.
         </p>
       </div>
-      <div>
-        <div>
-          <h1>Reseller Panel Layout</h1>
+      <div className="flex justify-center">
+        <div className="w-[30rem] flex flex-col gap-3">
+          <h1 className="font-bold text-xl">Reseller Panel Layout</h1>
           <p>
             Our reseller panel is a lot easier to use where we allow users to
             have full control. A customer can manage the accounts of their
@@ -82,7 +82,7 @@ const Reasons = () => {
             API Codes or even Add the Enigma and MAG devices depending on what’s
             their need.
           </p>
-          <ul>
+          <ul className="list-disc pl-6 flex flex-col gap-1">
             <li>Edit Channel Lineup</li>
             <li>
               Easily edit user banquets and offer the channels that they want.
@@ -98,21 +98,21 @@ const Reasons = () => {
             <li>Change username and Extend the accounts.</li>
             <li>
               Refund the created lines to credit back! (No Risk With your
-              customer) and much more
+              customer) and much more...
             </li>
           </ul>
         </div>
-        <div>
+        <div className="pt-8">
           <img src={Re_3} alt="Reseller reason 3" className="min-w-fit" />
         </div>
       </div>
-      <div>
+      <div className="flex justify-center py-7 pb-28 gap-4">
         <div>
           <img src={Re_4} alt="Reseller reason 4" className="min-w-fit" />
         </div>
-        <div>
-          <h1>Manage Customers</h1>
-          <p>
+        <div className="flex flex-col gap-5">
+          <h1 className="font-bold text-xl">Manage Customers</h1>
+          <p className="w-[30rem]">
             Our reseller panel provides you with the ability to see the active
             connections, number of connections registered, etc. Despite that,
             you can kill the connections, edit the user bouquets, disable the
@@ -120,12 +120,14 @@ const Reasons = () => {
             protected with Captcha to keep your data secure and avoid unwanted
             login from your account.
           </p>
-          <Button
-            color="blue"
-            className="flex capitalize rounded-3xl text-lg gap-1 items-center"
-          >
-            Get Your Panel Now <BsArrowRight className="h-5 w-11" />
-          </Button>
+          <div className="pl-20 pt-5">
+            <Button
+              color="blue"
+              className="flex capitalize rounded-3xl text-lg gap-1 items-center"
+            >
+              Get Your Panel Now <BsArrowRight className="h-5 w-11" />
+            </Button>
+          </div>
         </div>
       </div>
     </>
