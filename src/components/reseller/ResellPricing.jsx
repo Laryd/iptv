@@ -4,7 +4,7 @@ import {BsExclamationCircle} from 'react-icons/bs'
 
 const ResellPricing = () => {
   return (
-    <div className="flex flex-col items-center border border-black mx-96 p-5">
+    <div className="flex flex-col mb-4 items-center border border-black border-x-2 border-y-2 rounded-2xl mx-96 p-5">
       <div className="flex flex-col items-center gap-4">
         <h1 className="uppercase font-bold text-2xl">Pay-as-you-go pricing</h1>
         <p className="text-center px-10 font-semibold">
@@ -32,7 +32,9 @@ const ResellPricing = () => {
           However, the credit consumption is different when adding connections
           therefore you can check the whole list from the given below table.
         </p>
-        <h1 className="uppercase font-bold text-2xl pb-4">Flexible Pricing plans</h1>
+        <h1 className="uppercase font-bold text-2xl pb-4">
+          Flexible Pricing plans
+        </h1>
       </div>
       <div className="flex gap-5 border border-black rounded-2xl p-6">
         <ul className="list-disc">
@@ -54,58 +56,70 @@ const ResellPricing = () => {
           <li>Free & Fast Support Assistant</li>
         </ul>
       </div>
-      <div className="flex">
-        <div>
-          <h1>Most Popular</h1>
-          <p>$200</p>
-          <IoIosArrowDown />
-          <p>For 10-Credits</p>
-          <p>Subreseller create</p>
+      <div className="flex gap-5 pt-16 pb-9">
+        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-100 px-7 rounded-3xl relative">
+          <h1 className="bg-red-400 rounded-3xl px-2 text-white absolute top-[-12px]">
+            Most Popular
+          </h1>
+          <div className="flex flex-col items-center text-xl font-bold pt-10">
+            <p className="text-3xl">$200</p>
+            <IoIosArrowDown className="w-7 h-7" />
+            <p>For 10-Credits</p>
+          </div>
+          <p className="text-purple-300">Subreseller create</p>
         </div>
-        <div>
-          <h1>5% discount</h1>
-          <p>$475</p>
-          <IoIosArrowDown />
-          <p>For 25-Credits</p>
-          <p>Subreseller create</p>
+        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-100 px-7 rounded-3xl relative">
+          <h1 className="bg-green-400 rounded-3xl px-2 text-white absolute top-[-12px]">
+            5% discount
+          </h1>
+          <div className="flex flex-col items-center text-xl font-bold pt-10">
+            <p className="text-3xl">$475</p>
+            <IoIosArrowDown className="w-7 h-7" />
+            <p>For 25-Credits</p>
+          </div>
+          <p className="text-purple-300">Subreseller create</p>
         </div>
-        <div>
-          <h1>15% discount</h1>
-          <p>$850</p>
-          <IoIosArrowDown />
-          <p>For 50-Credits</p>
-          <p>Subreseller create</p>
+        <div className="flex flex-col items-center gap-4 border-x-2 border-y-2 border-indigo-900 py-9 bg-amber-100 px-7 rounded-3xl relative">
+          <h1 className="bg-blue-400 rounded-3xl px-2 text-white absolute top-[-12px]">
+            15% discount
+          </h1>
+          <div className="flex flex-col items-center text-xl font-bold pt-10">
+            <p className="text-3xl">$850</p>
+            <IoIosArrowDown className="w-7 h-7" />
+            <p>For 50-Credits</p>
+          </div>
+          <p className="text-purple-300">Subreseller create</p>
         </div>
       </div>
-      <div>
+      <div className="border border-x-2 border-y-2 border-red-600  p-1">
         <p>1 Credit=20 Dollars</p>
       </div>
-      <div>
-        <h1>Packages cost for Reseller</h1>
-        <p>How does credit work in our reseller panel?</p>
+      <div className="pt-5">
+        <h1 className="text-3xl font-bold">Packages cost for Reseller</h1>
+        <p className="text-center">How does credit work in our reseller panel?</p>
       </div>
-      <div>
-        <BsExclamationCircle />{" "}
+      <div className="flex gap-1 p-5">
+        <BsExclamationCircle className="h-5 w-5"/>
         <p>
           i.e You have purchased 10 credits for (200 dollars), if you activated
           / created line of 12 month, the panel will auto deduct 1 credit (20
           dollars) cost and there will be 9 credits left and so on..
         </p>
       </div>
-      <div>
-        <div>
+      <div className="flex gap-4 pb-5">
+        <div className="border border-blue-500 rounded-2xl p-5 flex flex-col gap-2">
           <h1>1 Month</h1>
           <p>0.10 - Credit</p>
         </div>
-        <div>
+        <div className="border border-blue-500 rounded-2xl p-5 flex flex-col gap-2">
           <h1>3 Month</h1>
           <p>0.25 - Credit</p>
         </div>
-        <div>
+        <div className="border border-blue-500 rounded-2xl p-5 flex flex-col gap-2">
           <h1>6 Month</h1>
           <p>0.5 - Credit</p>
         </div>
-        <div>
+        <div className="border border-blue-500 rounded-2xl p-5 flex flex-col gap-2">
           <h1>12 Month</h1>
           <p>1.00 - Credit</p>
         </div>
