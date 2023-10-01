@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Link } from "react-router-dom";
+import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -101,7 +102,9 @@ export function NavbarDefault() {
             color="blue"
             className="hidden lg:inline-block bg-slate-500"
           >
-            Subscribe
+            <span className="flex items-center gap-2">
+              Subscribe <IoIosArrowDroprightCircle className="w-6 h-6" />
+            </span>
           </Button>
         </Link>
         <IconButton
@@ -151,9 +154,9 @@ export function NavbarDefault() {
               color="blue"
               size="sm"
               fullWidth
-              className="mb-2"
+              className="mb-2 flex items-center gap-2"
             >
-              <span>Subscribe </span>
+              Subscribe <IoIosArrowDroprightCircle className="w-6 h-6" />
             </Button>
           </Link>
         </div>

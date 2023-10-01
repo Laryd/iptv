@@ -1,10 +1,11 @@
 import { Button } from "@material-tailwind/react";
 import {IoIosArrowDown} from "react-icons/io";
-import {BsExclamationCircle} from 'react-icons/bs'
+import { BsExclamationCircle, BsArrowRight } from "react-icons/bs";
+
 
 const ResellPricing = () => {
   return (
-    <div className="flex flex-col mb-4 items-center border border-black border-x-2 border-y-2 rounded-2xl mx-96 p-5">
+    <div className="flex flex-col mb-4 items-center border border-black border-x-2 border-y-2 rounded-2xl mx-96 p-5 bg-blue-200">
       <div className="flex flex-col items-center gap-4">
         <h1 className="uppercase font-bold text-2xl">Pay-as-you-go pricing</h1>
         <p className="text-center px-10 font-semibold">
@@ -96,17 +97,19 @@ const ResellPricing = () => {
       </div>
       <div className="pt-5">
         <h1 className="text-3xl font-bold">Packages cost for Reseller</h1>
-        <p className="text-center">How does credit work in our reseller panel?</p>
+        <p className="text-center">
+          How does credit work in our reseller panel?
+        </p>
       </div>
       <div className="flex gap-1 p-5">
-        <BsExclamationCircle className="h-5 w-5"/>
+        <BsExclamationCircle className="h-5 w-5" />
         <p>
           i.e You have purchased 10 credits for (200 dollars), if you activated
           / created line of 12 month, the panel will auto deduct 1 credit (20
           dollars) cost and there will be 9 credits left and so on..
         </p>
       </div>
-      <div className="flex gap-4 pb-5">
+      <div className="flex gap-4 pb-11">
         <div className="border border-blue-500 rounded-2xl p-5 flex flex-col gap-2">
           <h1>1 Month</h1>
           <p>0.10 - Credit</p>
@@ -124,13 +127,24 @@ const ResellPricing = () => {
           <p>1.00 - Credit</p>
         </div>
       </div>
-      <div>
-        <Button color="blue">Get Your Panel Now</Button>
+      <div className="pb-5">
+        <Button
+          color="blue"
+          className="flex capitalize rounded-3xl text-lg gap-1 items-center"
+        >
+          Get Your Panel Now <BsArrowRight className="h-5 w-11" />{" "}
+        </Button>
       </div>
       <div>
         <p>
-          need help? <span>Contact Us</span> Today Or Choose Reseller plan and
-          start making money
+          Need help?
+          <a href="#footer">
+            <span className="underline text-blue-gray-800 hover:text-blue-gray-400">
+              {" "}
+              Contact Us{" "}
+            </span>
+          </a>
+          today or choose a Reseller plan and start making money
         </p>
       </div>
     </div>
