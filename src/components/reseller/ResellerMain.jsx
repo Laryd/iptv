@@ -1,6 +1,6 @@
 import React from "react";
-import Heading from "./heading";
-import Dashboard from "./dashboard";
+import Heading from "./Heading";
+import Dashboard from "./Dashboard";
 import ResellPricing from "./ResellPricing";
 import Reasons from "./Reasons";
 
